@@ -4,8 +4,8 @@ config:
   name: stackblitz
   dot: .com
   title: Gulp
-  description: Testing Gulp with nunjucks on Glich
-  keywords: Node,Javascript,Gulp,Fastify
+  description: Testing Gulp with nunjucks
+  keywords: Node,Javascript,Gulp
   author: Moncho Varela
 menu:
   - url: index.html
@@ -21,8 +21,8 @@ menu:
 pages:
   home:
     title: Hello :)
-    description: There is a Proyect made with Gulp & Fastify
-    content: Use Nunjucks & Gulp to create html pages and Fastify for Server routes.
+    description: There is a Proyect made with Gulp & Nunjucks
+    content: Use Nunjucks & Gulp to create html pages.
   about:
     title: Hello :)
     description: My name is Moncho Varela
