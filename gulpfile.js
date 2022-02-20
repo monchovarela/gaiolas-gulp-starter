@@ -1,18 +1,29 @@
 const gulp = require('gulp');
+
+// Javascript
 const babel = require('gulp-babel');
 const minify = require('gulp-minify');
+
+// Nunjucks
 const render = require('gulp-nunjucks-render');
 const htmlmin = require('gulp-htmlmin');
 const data = require('gulp-data');
-const clean = require('gulp-clean');
+const yaml = require('gulp-yaml');
+const fs = require('fs');
+
+// Sass
 const sourcemaps = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
 const autoprefixer = require('gulp-autoprefixer');
-const browserSync = require('browser-sync').create();
-const yaml = require('gulp-yaml');
-const fs = require('fs');
 const sass = require('gulp-sass')(require('sass'));
 
+// Clean
+const clean = require('gulp-clean');
+
+// Browser sync
+const browserSync = require('browser-sync').create();
+
+// Folders
 const src = `${__dirname}/src`;
 const dist = `${__dirname}/public`;
 
