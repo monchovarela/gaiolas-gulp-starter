@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ config.lang }}">
+<head>
+    {% block pagetitle %}{% endblock %}
+    {% include "partials/metas.njk" %}
+    <link rel="stylesheet" href="./css/styles.css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+
+  <main id="app"> 
+    {% include "partials/header.njk" %}
+    <section class="content" id="view">
+    {% block layout %}{% endblock %}
+    </section>
+  </main>
+
+  <script type="text/javascript" src="./js/index.min.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

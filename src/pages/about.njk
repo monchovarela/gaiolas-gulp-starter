@@ -1,0 +1,15 @@
+{% set page_title = "about" %} 
+{% extends "layout.njk" %}
+{% block pagetitle %}<title>{{ config.title }}</title>{% endblock %}
+{% block layout %}
+
+    <div class="boxes center">
+      <div class="box-2">
+        <h1>{{pages.about.title}}</h1>
+        <h2>{{pages.about.description}}</h2>
+        <p>{{pages.about.content}}</p>
+        <p>{{pages.about.link}}</p>
+      </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+/** - Scroller
+----------------------- */
+::-webkit-scrollbar {
+  background: var(--light);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
+}

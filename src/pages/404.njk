@@ -1,0 +1,14 @@
+{% set page_title = "404" %} 
+{% extends "layout.njk" %}
+{% block pagetitle %}<title>{{ config.title }}</title>{% endblock %}
+{% block layout %}
+
+    <div class="boxes center">
+      <div class="box-2">
+        <h1>{{pages.notfound.title}}</h1>
+        <h2>{{pages.notfound.description}}</h2>
+        <p>{{pages.notfound.content}}</p>
+      </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{
+  "config": {
+    "lang": "es",
+    "charset": "UTF-8",
+    "name": "stackblitz",
+    "dot": ".com",
+    "title": "Fastify & Gulp",
+    "description": "Testing Gulp with nunjucks on Glich",
+    "keywords": "Node,Javascript,Gulp,Fastify",
+    "author": "Moncho Varela"
+  },
+  "menu": [
+    {
+      "url": "index.html",
+      "txt": "Home"
+    },
+    {
+      "url": "about.html",
+      "txt": "About"
+    },
+    {
+      "url": "typography.html",
+      "txt": "Typography"
+    },
+    {
+      "url": "grid.html",
+      "txt": "Grid"
+    },
+    {
+      "url": "404.html",
+      "txt": "404"
+    }
+  ],
+  "pages": {
+    "home": {
+      "title": "Hello :)",
+      "description": "There is a Proyect made with Gulp & Fastify",
+      "content": "Use Nunjucks & Gulp to create html pages and Fastify for Server routes."
+    },
+    "about": {
+      "title": "Hello :)",
+      "description": "My name is Moncho Varela",
+      "content": "I'm a web developer and musician, I live in La Coruña, the best place in the world. I love creating all kinds of ideas from websites, webapps (PWA, SPA etc) with PHP, VUE and other Javascript Frameworks and also videos and music, I also do things in Python to run on the console and also some other version programs Desktop.",
+      "link": "https://monchovarela.es"
+    },
+    "notfound": {
+      "title": "404 :(",
+      "description": "Oops! This Page Could Not Be Found",
+      "content": "SORRY BUT THE PAGE YOU ARE LOOKING FOR DOES NOT EXIST, HAVE BEEN REMOVED. NAME CHANGED OR IS TEMPORARILY UNAVAILABLE"
+    }
+  }
+}

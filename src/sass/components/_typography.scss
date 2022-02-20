@@ -1,0 +1,163 @@
+/** - Basic Typo
+----------------------- */
+a {
+  text-decoration: underline solid var(--dark);
+  text-underline-position: under;
+  color: var(--clink);
+}
+a:hover,
+a:focus,
+a:active {
+  color: var(--dark);
+  opacity: 0.8;
+  transition: opacity 500ms ease;
+}
+ul,
+ol,
+dl {
+  margin: 1rem 0;
+  padding: 0 0 0 2em;
+}
+li:not(:last-child),
+dd:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+dt {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0.5rem 0;
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  clear: both;
+}
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5 {
+  margin-top: 0.5em;
+  padding-top: 0;
+}
+h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+  font-variant: small-caps;
+  color: var(--dark);
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: var(--dark);
+}
+h6 {
+  font-size: 1em;
+  font-weight: 700;
+  font-style: italic;
+  display: inline;
+}
+h6 + p {
+  display: inline;
+}
+table {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--dark);
+}
+th {
+  background: var(--dark);
+  color: var(--light);
+}
+td,
+th {
+  padding: 0.5em 0.8em;
+  text-align: right;
+  border-bottom: 1px solid var(--dark);
+  border-right: 1px solid var(--dark);
+  white-space: nowrap;
+}
+td:last-child,
+th:last-child {
+  border-right: none;
+}
+thead th[colspan] {
+  padding: 0.2em 0.8em;
+  text-align: center;
+}
+thead tr:not(:only-child) td {
+  padding: 0.2em 0.8em;
+}
+thead + tbody tr:first-child td {
+  border-top: 0.1rem solid var(--dark);
+}
+td:first-child,
+th:first-child {
+  text-align: left;
+}
+tr:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+table img {
+  display: block;
+}
+
+/* code */
+pre {
+  box-shadow: var(--shadow);
+  line-height: 1.8;
+  width: calc(100% - 5px);
+}
+pre,
+pre > code {
+  margin: 0;
+  position: relative;
+  padding: 0.5rem;
+  background: var(--dark);
+  color: var(--light);
+  border: 1px solid var(--dark);
+}
+code,
+kbd,
+samp {
+  padding: 0.2em;
+  font-family: 'Consolas', monospace;
+  background: var(--dark);
+  border-radius: 2px;
+}
+kbd {
+  border: 1px solid var(--dark);
+}
+blockquote {
+  border-left: 3px solid var(--txt);
+  background: var(--dark);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  font-style: italic;
+  margin: 1rem 0;
+}
+time {
+  color: var(--dark);
+}
+mark {
+  background: #fff55a;
+}
+hr {
+  border: 0;
+  border-top: 0.1rem solid var(--dark);
+}

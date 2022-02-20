@@ -1,0 +1,29 @@
+/** - Simple grid
+----------------------- */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  align-content: flex-start;
+}
+
+@for $i from 1 through 12 {
+  .box-#{$i} {
+    display: block;
+    flex-basis: calc(100% / #{$i} - 1em);
+    margin: 0.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  @for $i from 1 through 4 {
+    .box-#{$i} {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}

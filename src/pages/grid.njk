@@ -1,0 +1,12 @@
+{% set page_title = "grid" %} 
+{% extends "layout.njk" %}
+{% block pagetitle %}<title>{{ config.title }}</title>{% endblock %}
+{% block layout %}
+
+<section class="grid">
+  {% for x in range(0, 25) %}
+  <article><img src="https://source.unsplash.com/random/{{ x }}" alt="Unsplash image"/></article>
+  {% endfor %}
+</section>
+    
+{% endblock %}

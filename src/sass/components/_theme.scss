@@ -1,0 +1,178 @@
+/** - App
+----------------------- */
+#app,
+.header {
+  overflow: hidden;
+  position: relative;
+}
+#app {
+  background-color: var(--light);
+  margin: auto;
+  height: 100%;
+  z-index: 2;
+  opacity: 1;
+  animation: oninit 500ms ease-in;
+  @keyframes oninit {
+    from {
+      opacity: 0;
+    }
+  }
+}
+
+/** - Theme Header
+----------------------- */
+.header {
+  min-height: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 2em 1em;
+  z-index: 5;
+  .logo {
+    float: left;
+    font-size: 1.3em;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--txt);
+  }
+  .navigation {
+    float: right;
+    font-family: var(--font-family);
+    a {
+      text-decoration: none;
+      margin-left: 1em;
+      color: var(--dark);
+      border-bottom: 1px solid var(--light);
+      transition: all 0.5s ease;
+      &.active,
+      &:hover {
+        color: var(--dark);
+        opacity: 0.8;
+        border-bottom: 1px solid var(--dark);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    &.active {
+      overflow: auto !important;
+      min-height: 100vh;
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        float: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--dark);
+        z-index: 999999;
+        text-align: center;
+        overflow: auto;
+        opacity: 1;
+        visibility: visible;
+        animation: menu 500ms ease-out 1;
+        clip-path: circle(100% at 50% 50%);
+        transition: opacity 0.5s ease;
+        a {
+          display: block;
+          width: 100%;
+          margin: 1em auto;
+          font-size: 2em;
+          text-align: center;
+          color: var(--light);
+          border-bottom: 1px solid var(--dark);
+          .active,
+          &:focus {
+            color: var(--light);
+          }
+          &:nth-child(2) {
+            margin-top: 3em;
+          }
+        }
+      }
+      a {
+        &.btn-menu {
+          margin: 0;
+          width: 2em;
+          top: 1em;
+          right: 1em;
+          span {
+            transform: translateY(14px) rotate(45deg);
+            transition: all 0.5s ease;
+            width: 75%;
+            background: var(--light);
+          }
+          span + span {
+            transform: translateY(1px) rotate(-45deg);
+            transition: all 0.5s ease;
+            width: 75%;
+          }
+        }
+      }
+    }
+    .navigation {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease;
+      a {
+        display: none;
+      }
+    }
+    .btn-menu {
+      width: 2em;
+      height: 1em;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      font-size: 2em;
+      margin: 0;
+      display: block;
+      span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 0.05em;
+        margin: 0;
+        background: var(--dark);
+        transition: all 0.5s ease;
+        &:first-child {
+          width: 50%;
+        }
+        &:nth-child(2) {
+          top: 0.5em;
+        }
+      }
+    }
+    @keyframes menu {
+      from {
+        clip-path: circle(0 at 50% 50%);
+      }
+    }
+  }
+}
+
+/** - Theme Content
+----------------------- */
+.content {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem;
+  z-index: 4;
+  position: relative;
+  height: calc(100% - 86px);
+  overflow: auto;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
+}

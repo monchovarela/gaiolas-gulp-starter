@@ -1,0 +1,25 @@
+details {
+  margin: 1rem 0;
+  border: 1px solid var(--dark);
+  box-shadow: var(--shadow);
+  width: calc(100% - 6px);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+  summary {
+    padding: 0.5rem 0.8rem;
+    background: var(--light);
+    color: var(--dark);
+  }
+  &[open] {
+    summary {
+      background: var(--dark);
+      color: var(--light);
+      border-bottom: 1px solid var(--dark);
+    }
+  }
+  > div {
+    padding: 0 0.5rem;
+  }
+}
