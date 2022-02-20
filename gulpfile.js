@@ -16,7 +16,6 @@ const sass = require('gulp-sass')(require('sass'));
 const src = `${__dirname}/src`;
 const dist = `${__dirname}/public`;
 
-
 /**
  * Name: clean
  * Pipe: gulp-clean
@@ -201,12 +200,12 @@ gulp.task('browserSync', function () {
 gulp.task(
   'default',
   gulp.series(
-    'images',
     'yaml',
     'clean',
     'javascript',
     'sass',
     'nunjucks',
+    'images',
     'watch',
     'browserSync'
   ),
