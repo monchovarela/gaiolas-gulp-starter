@@ -3,7 +3,7 @@ config:
   charset: UTF-8
   name: stackblitz
   dot: .com
-  title: Fastify & Gulp
+  title: Gulp
   description: Testing Gulp with nunjucks on Glich
   keywords: Node,Javascript,Gulp,Fastify
   author: Moncho Varela
