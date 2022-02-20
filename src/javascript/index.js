@@ -2,13 +2,9 @@ const _ = (el) => document.querySelector(el);
 // theme colors
 const colors = {
   simple: ['#000000', '#FFFFFF', '#888888'],
-  simpleDark: ['#FFFFFF', '#000000', '#777777'],
   vine: ['#A4193D', '#FFDFB9', '#3333333'],
-  vineDark: ['#FFDFB9', '#A4193D', '#FDFDFD'],
   green: ['#2BAE66', '#FCF6F5', '#3333333'],
-  greenDark: ['#FCF6F5', '#2BAE66', '#FDFDFD'],
   red: ['#990011', '#FCF6F5', '#3333333'],
-  redDark: ['#FCF6F5', '#990011', '#FDFDFD'],
 };
 // Generate random theme colors
 const randomColors = () => {
