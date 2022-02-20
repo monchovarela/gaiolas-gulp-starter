@@ -1,11 +1,19 @@
 {% set page_title = "404" %} 
 {% extends "layout.njk" %}
 {% block pagetitle %}<title>{{ config.title }}</title>{% endblock %}
+{% block css%}
+<style>
+.center-image{
+  margin:0 auto;
+  display:flex;
+}
+</style>
+{% endblock%}
 {% block layout %}
 
     <div class="boxes center">
       <div class="box-2">
-        <img src="./images/404.png"/>
+        <img class="center-image" src="./images/404.png"/>
         <h1>{{pages.notfound.title}}</h1>
         <h2>{{pages.notfound.description}}</h2>
         <p>{{pages.notfound.content}}</p>
