@@ -16,20 +16,6 @@ const sass = require('gulp-sass')(require('sass'));
 const src = `${__dirname}/src`;
 const dist = `${__dirname}/public`;
 
-/**
- * Name: images
- * Desc: Copy images folder (test only)
- */
-gulp.task('images', function () {
-  return gulp
-    .src(`${src}/images/**/*`)
-    .pipe(gulp.dest(`${dist}/images`))
-    .pipe(
-      browserSync.reload({
-        stream: true,
-      })
-    );
-});
 
 /**
  * Name: clean
@@ -65,6 +51,21 @@ gulp.task('cleanJson', function () {
       })
     );
 });
+/**
+ * Name: images
+ * Desc: Copy images folder (test only)
+ */
+gulp.task('images', function () {
+  return gulp
+    .src(`${src}/images/**/*`)
+    .pipe(gulp.dest(`${dist}/images`))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
+});
+
 /**
  * Name: javascript
  * Pipe: gulp-babel,gulp-minify,gulp-sourcemaps
