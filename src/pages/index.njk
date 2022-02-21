@@ -2,13 +2,9 @@
 {% extends "layout.njk" %}
 {% block pagetitle %}<title>{{ config.title }}</title>{% endblock %}
 {% block layout %}
-
-    <div class="boxes center p-3">
-      <div class="box-2">
-        <h1>{{pages.home.title}}</h1>
-        <h2>{{pages.home.description}}</h2>
-        <p>{{pages.home.content}}</p>
-      </div>
-    </div>
-    
+  {%- from "macros/center-box.njk" import centerBox -%}
+  {{centerBox(
+    pages.home.title,
+    pages.home.description,
+    pages.home.content )}}
 {% endblock %}

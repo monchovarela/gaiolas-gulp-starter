@@ -61,20 +61,6 @@ gulp.task('cleanJson', function () {
       })
     );
 });
-/**
- * Name: images
- * Desc: Copy images folder (test only)
- */
-gulp.task('images', function () {
-  return gulp
-    .src(`${src}/images/**/*`)
-    .pipe(gulp.dest(`${dist}/images`))
-    .pipe(
-      browserSync.reload({
-        stream: true,
-      })
-    );
-});
 
 /**
  * Name: javascript
@@ -174,7 +160,6 @@ gulp.task('watch', function (done) {
   );
   gulp.watch(`${src}/javascript/index.js`, gulp.series('javascript'));
   gulp.watch(`${src}/config/data.yaml`, gulp.series('yaml'));
-  gulp.watch(`${src}/images/**/*`, gulp.series('images'));
   gulp.watch(
     [`${src}/pages/*.njk`, `${src}/templates`, `${src}/config/*.json`],
     gulp.series('nunjucks')
@@ -216,7 +201,6 @@ gulp.task(
     'javascript',
     'sass',
     'nunjucks',
-    'images',
     'watch',
     'browserSync'
   ),

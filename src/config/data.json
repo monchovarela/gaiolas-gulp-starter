@@ -40,8 +40,7 @@
     "about": {
       "title": "Hello :)",
       "description": "My name is Moncho Varela",
-      "content": "I'm a web developer and musician, I live in La Coruña, the best place in the world. I love creating all kinds of ideas from websites, webapps (PWA, SPA etc) with PHP, VUE and other Javascript Frameworks and also videos and music, I also do things in Python to run on the console and also some other version programs Desktop.",
-      "link": "https://monchovarela.es"
+      "content": "I'm a web developer and musician, I live in La Coruña, the best place in the world. I love creating all kinds of ideas from websites, webapps (PWA, SPA etc) with PHP, VUE and other Javascript Frameworks and also videos and music, I also do things in Python to run on the console and also some other version programs Desktop."
     },
     "notfound": {
       "title": "404 :(",

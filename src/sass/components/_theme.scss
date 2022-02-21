@@ -30,13 +30,11 @@
   .logo {
     float: left;
     font-size: 1.3em;
-    font-family: var(--font-family);
     font-weight: 700;
     color: var(--txt);
   }
   .navigation {
     float: right;
-    font-family: var(--font-family);
     a {
       text-decoration: none;
       margin-left: 1em;
@@ -167,8 +165,6 @@
   position: relative;
   height: calc(100% - 86px);
   overflow: auto;
-  font-size: var(--font-size);
-  font-family: var(--font-family);
   @media (max-width: 768px) {
     margin-left: 0;
     margin-right: 0;

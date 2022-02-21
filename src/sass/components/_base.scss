@@ -30,7 +30,15 @@ body {
 img {
   max-width: 100%;
 }
-
+img,
+svg {
+  max-width: 100%;
+  vertical-align: text-top;
+}
+p > img:not(:only-child) {
+  float: right;
+  margin: 0 0 0.5em 0.5em;
+}
 .header .logo span,
 b,
 blockquote:before,

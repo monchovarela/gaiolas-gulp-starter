@@ -10,14 +10,9 @@
 </style>
 {% endblock%}
 {% block layout %}
-
-    <div class="boxes center">
-      <div class="box-2">
-        <img class="center-image" src="./images/404.png"/>
-        <h1>{{pages.notfound.title}}</h1>
-        <h2>{{pages.notfound.description}}</h2>
-        <p>{{pages.notfound.content}}</p>
-      </div>
-    </div>
-
+  {%- from "macros/center-box.njk" import centerBox -%}
+  {{centerBox(
+    pages.notfound.title,
+    pages.notfound.description,
+    pages.notfound.content )}}
 {% endblock %}

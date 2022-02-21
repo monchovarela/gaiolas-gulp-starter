@@ -18,6 +18,7 @@ menu:
     txt: Grid
   - url: 404.html
     txt: '404'
+
 pages:
   home:
     title: Hello :)
@@ -32,7 +33,6 @@ pages:
       SPA etc) with PHP, VUE and other Javascript Frameworks and also videos and
       music, I also do things in Python to run on the console and also some
       other version programs Desktop.
-    link: https://monchovarela.es
   notfound:
     title: 404 :(
     description: Oops! This Page Could Not Be Found
