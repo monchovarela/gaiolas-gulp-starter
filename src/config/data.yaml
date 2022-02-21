@@ -1,7 +1,7 @@
 config:
   lang: es
   charset: UTF-8
-  name: stackblitz
+  name: gaiolas
   dot: .com
   title: Gulp
   description: Testing Gulp with nunjucks
