@@ -72,7 +72,7 @@
 
 {% macro figure(src='https://source.unsplash.com/random',alt='Random image',name='Unsplash') %}
   <figure>
-    <img src="{{src}}" alt="{{alt}}"/>
+    <img class="zoom" src="{{src}}" alt="{{alt}}"/>
     <figcaption>{{name}}</figcaption>
   </figure>
 {% endmacro %}
