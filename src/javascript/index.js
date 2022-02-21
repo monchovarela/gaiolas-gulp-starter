@@ -32,4 +32,44 @@ document.addEventListener('DOMContentLoaded', () => {
   _('.btn-menu').addEventListener('click', toogleNavigation);
   _('.btn-close').addEventListener('click', toogleNavigation);
   randomColors();
+  // simple lightbox
+  let img = document.querySelectorAll('.zoom');
+  Array.from(img).map((item) => handleImages(item));
 });
+
+// handle images
+function handleImages(item, index) {
+  item.addEventListener('click', (evt) => {
+    createLightbox({
+      src: evt.target.src,
+      alt: evt.target.alt ? evt.target.alt : 'Unsplash',
+    });
+  });
+}
+// create lightbox
+function createLightbox(args) {
+  document.body.style.overflow = 'hidden';
+
+  let lightbox = createElement('section', document.body, {
+      className: 'lightbox',
+    }),
+    lightboxBody = createElement('article', lightbox, {
+      className: 'lightbox-body',
+    }),
+    image = createElement('img', lightboxBody, {
+      src: args.src,
+    });
+
+  lightboxBody.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    document.body.style.overflow = 'inherit';
+    document.body.removeChild(lightbox);
+  });
+}
+// create elements
+function createElement(element, where, args) {
+  let d = document.createElement(element);
+  if (args) for (const [k, v] of Object.entries(args)) d[k] = v;
+  where.appendChild(d);
+  return d;
+}

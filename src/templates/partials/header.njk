@@ -1,24 +1,20 @@
 <header class="header">
-  <div class="logo">
-    {{config.name}}<span>{{config.dot}}</span>
-  </div>
+  <div class="logo">{{config.name}}<span>{{config.dot}}</span></div>
   <a href="javascript:void(0)" class="btn-menu">
     <span></span>
     <span></span>
   </a>
-  <div class="navigation">
-
+  <nav class="navigation">
     <a href="javascript:void(0)" class="btn-menu btn-close">
       <span></span>
       <span></span>
     </a>
-
-  {% for item in menu %}
+    {% for item in menu %}
     <a class="{% if page_title == item.txt.toLowerCase() %}active{% endif %}" href="{{item.url}}">
       {{ item.txt }}
     </a>
-  {% endfor %}
-  </div>    
+    {% endfor %}
+  </nav>    
 </header>
 
 

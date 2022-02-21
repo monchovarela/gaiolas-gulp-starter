@@ -1,10 +1,23 @@
+/** - Vars
+----------------------- */
 @import './components/variables';
+
+/** - Mixins
+----------------------- */
+@import './components/mixins';
+
+/** - Base
+----------------------- */
 @import './components/root';
 @import './components/scroller';
 @import './components/base';
 @import './components/typography';
+@import './components/tables';
 @import './components/details';
 @import './components/figures';
+
+/** - Classes
+----------------------- */
 @import './components/text-align';
 @import './components/margin';
 @import './components/padding';
@@ -12,4 +25,10 @@
 @import './components/boxes';
 @import './components/grid';
 @import './components/aspect-ratio';
+@import './components/lightbox';
+
+/** - App
+----------------------- */
 @import './components/theme';
+
+

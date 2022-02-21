@@ -75,48 +75,19 @@ h6 + p {
   display: inline;
 }
 table {
-  width: 100%;
-  overflow-x: auto;
-  border: 1px solid var(--dark);
+  @extend %table;
+  thead{
+    background:var(--dark);
+    color:var(--light);
+  }
+  tbody{
+    background:var(--light);
+    color:var(--txt);
+    td{
+      border-color:var(--dark);
+    }
+  }
 }
-th {
-  background: var(--dark);
-  color: var(--light);
-}
-td,
-th {
-  padding: 0.5em 0.8em;
-  text-align: right;
-  border-bottom: 1px solid var(--dark);
-  border-right: 1px solid var(--dark);
-  white-space: nowrap;
-}
-td:last-child,
-th:last-child {
-  border-right: none;
-}
-thead th[colspan] {
-  padding: 0.2em 0.8em;
-  text-align: center;
-}
-thead tr:not(:only-child) td {
-  padding: 0.2em 0.8em;
-}
-thead + tbody tr:first-child td {
-  border-top: 0.1rem solid var(--dark);
-}
-td:first-child,
-th:first-child {
-  text-align: left;
-}
-tr:hover {
-  background-color: var(--dark);
-  color: var(--light);
-}
-table img {
-  display: block;
-}
-
 /* code */
 pre {
   box-shadow: var(--shadow);

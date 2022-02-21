@@ -1,0 +1,84 @@
+// ----------------------------------------
+// // ------ tables config ------
+// ----------------------------------------
+
+// ----------------------------------------
+// // ------ colors ------
+// ----------------------------------------
+$table-border-color: $dark;
+
+// ----------------------------------------
+// // ------ table settings ------
+// ----------------------------------------
+
+$table-border-width: 0.071428571em;
+$table-border-style: solid;
+$table-margin-bottom: 1.529411765em;
+$table-cell-padding: 0.470588235em;
+$table-cell-text-align: left;
+$table-cell-border-top: $table-border-width $table-border-style
+  $table-border-color;
+$table-header-font-weight: bold;
+$table-body-border-top: 0.142857143em $table-border-style $table-border-color;
+$table-condensed-padding: 0.294117647em;
+$table-bordered-border: $table-border-width $table-border-style
+  $table-border-color;
+$table-bordered-border-radius: 0;
+$table-border-left: $table-border-width $table-border-style $table-border-color;
+$table-bordered-child-radius: 0;
+
+/*  Removes default browser settings
+ *  and evens out inconsistencies. */
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  Sets table width to 100%.
+ *  Adds bottom-margin. */
+.table,
+%table {
+  width: 100%;
+  margin-bottom: $table-margin-bottom;
+}
+
+/*  Adds table cell padding,
+ *  aligns text to the left,
+ *  and adds a top border to each cell. */
+.table th,
+%table th,
+.table td,
+%table td {
+  padding: $table-cell-padding;
+  text-align: $table-cell-text-align;
+  border-top: $table-cell-border-top;
+}
+
+/*  Sets table header font-weight to bold.
+ *  Aligns table header text to the bottom of each cell. */
+.table th,
+%table th {
+  font-weight: $table-header-font-weight;
+  vertical-align: bottom;
+}
+
+/*  Aligns cell text to the top of each cell. */
+.table td,
+%table td {
+  vertical-align: top;
+}
+
+/*  Removes the border-top from the first row. */
+.table thead:first-child tr th,
+%table thead:first-child tr th,
+.table thead:first-child tr td,
+%table thead:first-child tr td {
+  border-top: 0;
+}
+
+/*  Adds border-top between two table-body sections. */
+.table tbody + tbody,
+%table tbody + tbody {
+  border-top: $table-body-border-top;
+}
