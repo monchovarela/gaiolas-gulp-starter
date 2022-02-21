@@ -1,7 +1,7 @@
 config:
   lang: es
   charset: UTF-8
-  name: gaiolas
+  name: example
   dot: .com
   title: Gulp
   description: Testing Gulp with nunjucks
