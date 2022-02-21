@@ -16,7 +16,7 @@
       opacity: 0;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 60em) {
     margin: 0;
     height: 100%;
     width: 100%;
@@ -57,7 +57,7 @@
       }
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 60em) {
     margin-left: 0;
     margin-right: 0;
     &.active {
